@@ -1,0 +1,30 @@
+const numeroa = parseInt(prompt("Digite o primeiro número: "));
+const numerob = parseInt(prompt("Digite o segundo número: "));
+const operacao = prompt("Digite a operação (+, -, *, /):");
+
+let resultado;
+
+switch (operacao) {
+  case "+":
+    resultado = numeroa + numerob;
+      console.log(resultado)
+    break;
+    
+  case "-":
+    resultado = numeroa - numerob;
+      console.log(resultado)
+    break;
+    
+  case "*":
+    resultado = numeroa * numerob;
+      console.log(resultado)
+    break;
+    
+  case "/":
+    if (numerob === 0) {
+      console.log("ERRO! Divisão por 0")
+    }
+    resultado = numeroa / numerob;
+    console.log(resultado)
+    break;
+}
