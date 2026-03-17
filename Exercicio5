@@ -1,0 +1,17 @@
+const n1 = parseInt(prompt("Digite o primeiro número: "));
+const n2 = parseInt(prompt("Digite o segundo número: "));
+const n3 = parseInt(prompt("Digite o terceiro número: "));
+
+const media = (n1 + n2 + n3) / 3;
+
+if (media >= 7) {
+  console.log("Aprovado!");
+}
+
+else if (media >= 5 && media < 7) {
+  console.log("Recuperação!")
+}
+
+else {
+  console.log("Reprovado!")
+}
