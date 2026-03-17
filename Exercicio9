@@ -1,0 +1,22 @@
+const login = "admin";
+const senha = "1234";
+
+for (let i = 1; i <= 3; i++) {
+    const acessoa = prompt("Digite o login:");
+    const acessob = prompt("Digite a senha:");
+
+    if (acessoa === login && acessob === senha) {
+        console.log("Login e senha corretos! Bem-vindo!");
+        break;
+    } else if (acessoa !== login && acessob === senha) {
+        console.log("Você errou o login, mas acertou a senha.");
+    } else if (acessoa === login && acessob !== senha) {
+        console.log("Você acertou o login, mas errou a senha.");
+    } else {
+        console.log("Você errou o login e a senha.");
+    }
+
+    if (i === 3) {
+        console.log("Suas tentativas acabaram! Acesso negado.");
+    }
+}
