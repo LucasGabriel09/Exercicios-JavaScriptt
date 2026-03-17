@@ -1,0 +1,8 @@
+const numero = prompt("Digite um número inteiro: ");
+
+if (numero % 2 == 0) {
+  console.log("O número digitado é PAR!")
+}
+if (numero % 2 != 0) {
+console.log("O número digitado é ÍMPAR!")
+}
